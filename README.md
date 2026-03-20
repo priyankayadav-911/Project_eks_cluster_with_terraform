@@ -12,6 +12,7 @@ Complete terraform files to create EKS in AWS VPC is available in the `eks-insta
 - `variables.tf`: Variables for main.tf
 - `outputs.tf`: Output values you wish to see post terraform execution, For example - `VPC ID`.
 
+
 ### Connect to Jenkins EC2 Server
   `ssh -i your-key.pem ec2-user@your-ec2-ip`
   
