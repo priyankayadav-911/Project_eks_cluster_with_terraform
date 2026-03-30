@@ -7,7 +7,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket         = "priya-project-s3-bucket"
+    bucket         = "priya-project1-s3-bucket"
     key            = "terraform.tfstate"
     region         = "us-east-1"
     dynamodb_table = "mc-eks-state-lock"
