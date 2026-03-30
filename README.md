@@ -43,7 +43,7 @@ C. In the pipeline config, choose:
 
 -	Pipeline script from SCM
 -	`SCM`: Git
--	`Repository URL`: https://github.com/adarsh0331/Eks_Cluster_with_terraform.git
+-	`Repository URL`: https://github.com/priyankayadav-911/Project_eks_cluster_with_terraform.git
 -	`Script Path`: eks-install/Jenkinsfile
 
 ### Trigger the Pipeline
