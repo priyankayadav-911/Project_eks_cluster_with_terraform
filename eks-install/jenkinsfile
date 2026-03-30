@@ -53,7 +53,7 @@ pipeline {
                 echo 'Initializing Terraform...'
             sh '''
                         cd eks-install
-                        ../terraform init
+                        terraform init
                     '''
                 
             }
@@ -65,7 +65,7 @@ pipeline {
                 echo 'Running Terraform Plan...'
                  sh '''
                         cd eks-install
-                        ../terraform plan -out=tfplan
+                        terraform plan -out=tfplan
                     '''
             }
         }
@@ -76,7 +76,7 @@ pipeline {
                 echo 'Applying Terraform changes...'
                  sh '''
                         cd eks-install
-                     ../terraform apply -auto-approve 
+                       terraform apply -auto-approve 
                     '''
             }
         }
