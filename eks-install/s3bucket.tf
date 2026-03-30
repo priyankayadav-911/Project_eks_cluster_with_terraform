@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "terraform_state" {
-  bucket = "mindcircuit-eks-bucket"
+  bucket = "priya-project1-s3-bucket"
 
   lifecycle {
     prevent_destroy = false
