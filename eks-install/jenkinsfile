@@ -11,7 +11,7 @@ pipeline {
         stage('CLONE SCM') {
             steps {
                 echo 'Cloning code from GitHub...'
-                git branch: 'main', credentialsId: 'git-crred', url: 'https://github.com/priyankayadav-911/Project_10_Eks_Cluster_with_terraform.git'
+                git branch: 'main', credentialsId: 'github-cred', url: 'https://github.com/priyankayadav-911/Project_eks_cluster_with_terraform.git'
             }
         }
 
@@ -86,7 +86,7 @@ pipeline {
                 script {
                     // Retrieve the public_ip output from Terraform
                     echo 'Retrieving Terraform Outputs...'
-                    def publicIp = sh(script: 'terraform output -raw public_ip', returnStdout: true).trim()
+                    def publicIp = sh(script: 'cd eks-install && ../terraform output -raw cluster_endpoint', returnStdout: true).trim()
                     echo "Public IP of the EC2 instance: ${publicIp}"
                 }
             }
