@@ -13,6 +13,4 @@ output "vpc_id" {
   value       = module.vpc.vpc_id
 }
 
-output "public_ip" {
-  value = aws_instance.example.public_ip
-}
+
