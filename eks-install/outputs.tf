@@ -12,3 +12,7 @@ output "vpc_id" {
   description = "VPC ID"
   value       = module.vpc.vpc_id
 }
+
+output "public_ip" {
+  value = aws_instance.example.public_ip
+}
